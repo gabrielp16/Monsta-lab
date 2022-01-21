@@ -1,0 +1,9 @@
+Buscador general
+https://api.themoviedb.org/3/search/movie?api_key=f7cc4d429cde54acb717c8d20a5a4109&query=spider
+
+Buscador por pelicula 
+https://api.themoviedb.org/3/movie/557?api_key=f7cc4d429cde54acb717c8d20a5a4109
+
+
+Imagenes
+https://image.tmdb.org/t/p/w500/archivo.jpg
