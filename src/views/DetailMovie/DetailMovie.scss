@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import '../../colors';
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -23,9 +25,9 @@
     .go-back {
         display: inline-block;
         width: 150px;
-        color: #fff;
+        color: $white;
         text-decoration: none;
-        background-color: #010122;
+        background-color: $dark_blue;
         padding: 15px;
         font-size: 20px;
         box-sizing: border-box;
@@ -45,7 +47,7 @@
         float: right;
         width: calc(100% - 430px);
         padding: 0 20px 20px;
-        background: #000c28d4;
+        background: $dark_blue;
         border-radius: 4px;
 
         h1 {

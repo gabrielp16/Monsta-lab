@@ -1,5 +1,7 @@
+@import '../../colors';
+
 body {
-    background: #012;
+    background: $dark;
     background-image: url(./images/bg.jpg);
-    color: #fff;
+    color: $white;
   }

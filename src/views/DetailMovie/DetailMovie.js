@@ -22,7 +22,7 @@ const DetailMovie = () => {
 
     useEffect(() => {
         getMovieById();
-    }, []);
+    });
 
     return (
         <>
