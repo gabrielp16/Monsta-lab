@@ -8,19 +8,21 @@ import SubHeader from "../../components/SubHeader/SubHeader";
 import Searchbox from "../../components/Searchbox/Searchbox";
 
 const Home = () => {
+    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+    const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
+
     const [movies, setMovies] = useState([]);
     const [favorites, setFavorite] = useState([]);
-    const [searchMovie, setSearch] = useState('a');
+    const [searchMovie, setSearch] = useState(randomCharacter);
 
     const getMovies = async (searchMovie) => {
         if (searchMovie) {
             const url = `https://api.themoviedb.org/3/search/movie?api_key=f7cc4d429cde54acb717c8d20a5a4109&query=${searchMovie}`;
             const response = await fetch(url);
             const responseJson = await response.json();
-
-            if (responseJson.results) {
-                setMovies(responseJson.results)
-            }
+            const results = responseJson.results;
+            const moviesResult = !results ? [] : results;
+            setMovies(moviesResult)
         }
     }
 

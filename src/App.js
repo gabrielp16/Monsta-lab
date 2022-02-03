@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  useRoutes,
-} from "react-router-dom";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import Home from "./views/Home/Home";
 import DetailMovie from "./views/DetailMovie/DetailMovie";
 
